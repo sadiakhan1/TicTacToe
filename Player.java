@@ -29,6 +29,12 @@ public class Player {
     /** Number of pieces placed by player one */
     private int playerOnePieces;
 
+    /** The maimum connected pieces for player one */
+    private int maxConOne;
+
+    /** The maimum connected pieces for player two */
+    private int maxConTwo;
+
     
     //constructors
 
@@ -46,7 +52,7 @@ public class Player {
      * Tells the piece of player one
      * @return the string of player one
      */
-    public String getPlayerOne(){
+    public String getPlayerOne() {
         return playerOne;
     }
 
@@ -54,7 +60,7 @@ public class Player {
      * Tells the piece of player two
      * @return the string of player two
      */
-    public String getPlayerTwo(){
+    public String getPlayerTwo() {
         return playerTwo;
     }
 
@@ -67,24 +73,57 @@ public class Player {
     }
 
     /**
-     * Tells the number of pieces placed by player one
-     * @return the integer of pieces placed by player one
-     */
+    * Tells the number of pieces placed by player one
+    * @return the integer of pieces placed by player one
+    */
     public int getPlayerOnePieces() {
         return playerOnePieces;
     }
 
     /**
      * Adds 1 piece to the total pieces of player one
-     */
-    public void addPieceOne(){
+    */
+    public void addPieceOne() {
         this.playerOnePieces += 1;
     }
 
     /**
      * Adds 1 piece to the total pieces of player two
      */
-    public void addPieceTwo(){
+    public void addPieceTwo() {
         this.playerTwoPieces += 1;
     }
+    
+    /**
+     * Tells the max number of connected pieces for player one
+     * @return the integer of max connected pieces
+     */
+    public int maxConOne() {
+        return maxConOne;
+    }
+
+    /**
+     * Tells the max number of connected pieces for player two
+     * @return the integer of max connected pieces
+     */
+    public int maxConTwo() {
+        return maxConTwo;
+    }
+
+    /**
+     * Updates the max number of connected pieces for player one
+     * @param maxConnected the new max connected piece count
+     */
+    public void setMaxConOne(int maxConnected) {
+        this.maxConOne = maxConnected;
+    }
+
+    /**
+     * Updates the max number of connected pieces for player two
+     * @param maxConnected the new max connected piece count
+     */
+    public void setMaxConTwo(int maxConnected) {
+        this.maxConTwo = maxConnected;
+    }
 }
+
