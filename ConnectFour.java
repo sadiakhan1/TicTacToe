@@ -2,10 +2,7 @@ import java.util.*;
 
 /**
 * operates the game by taking player input and checking for win conditions
-* @author Mitchell Schray
-* @author Zane Price
 * @author Sadia Khan
-* @author Tyler Pate
 */
 public class ConnectFour {   
    
