@@ -2,10 +2,7 @@
 
 /**
  * stores the information of the player of their piece type, win count, and pieces placed
- * @author Mitchell Schray
- * @author Zane Price
  * @author Sadia Khan
- * @author Tyler Pate
  */
 public class Player {
     
