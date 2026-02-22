@@ -1,9 +1,6 @@
 /**
      * Designs and constructs the grid 
-     * @author Mitchell Schray
-     * @author Zane Price
      * @author Sadia Khan
-     * @author Tyler Pate
      */
 public class Grid {
     
